@@ -12,13 +12,13 @@ function formatDate(inputDate) {
 
 
    
- function checkMaxValue(input) {
+ function checkMaxValue(input,max) {
         // Get the entered value
         let enteredValue = parseInt(input.value, 10);
 
         // Check if the entered value is greater than 99
-        if (enteredValue > 99) {
+        if (enteredValue > max) {
             // If so, set the value to 99
-            input.value = 99;
+            input.value = max;
         }
     }
