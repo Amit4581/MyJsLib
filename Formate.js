@@ -9,3 +9,16 @@ function formatDate(inputDate) {
     var dd = String(formattedDate.getDate()).padStart(2, '0');
     return yyyy + '-' + mm + '-' + dd;
 }
+
+
+   
+ function checkMaxValue(input) {
+        // Get the entered value
+        let enteredValue = parseInt(input.value, 10);
+
+        // Check if the entered value is greater than 99
+        if (enteredValue > 99) {
+            // If so, set the value to 99
+            input.value = 99;
+        }
+    }
